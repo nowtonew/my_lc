@@ -4,9 +4,6 @@
 #include <iostream>
 #include <vector>
 
-#include "Point.h"
-#include "Circle.h"
-
 using namespace std;
 
 int trap(vector<int> &height)
@@ -42,13 +39,13 @@ int trap(vector<int> &height)
     return sum;
 }
 
-// int main()
-// {
-//     cout << "test---------" << endl;
-//     vector<int> height = {0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1};
-//     int res = trap(height);
-//     cout << res << endl;
-// }
+int main()
+{
+    cout << "test---------" << endl;
+    vector<int> height = {0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1};
+    int res = trap(height);
+    cout << res << endl;
+}
 
 // int main()
 // {
