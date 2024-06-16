@@ -6,78 +6,6 @@
 
 using namespace std;
 
-// 四数之和
-// int main()
-// {
-//     int n;
-//     vector<int> num;
-//     while (cin >> n)
-//     {
-//         num.push_back(n);
-//         if (getchar() == '\n')
-//         {
-//             break;
-//         }
-//     }
-//     int target;
-//     cin >> target;
-//     if (num.size() < 4)
-//     {
-//         cout << "no answer!" << endl;
-//         return -1;
-//     }
-//     vector<vector<int>> res;
-//     sort(num.begin(), num.end());
-//     for (int i = 0; i < num.size(); i++)
-//     {
-//         if (i != 0 && (num[i] == num[i - 1]))
-//             i++;
-//         for (int j = i + 1; j < num.size(); j++)
-//         {
-//             if (j != i + 1 && (num[j] == num[j - 1]))
-//                 j++;
-//             int l = j + 1;
-//             int r = num.size() - 1;
-//             while (l < r)
-//             {
-//                 int temp = num[i] + num[j] + num[l] + num[r];
-//                 if (temp < target)
-//                 {
-//                     l++;
-//                     if (num[l] == num[l - 1])
-//                         l++;
-//                 }
-//                 else if (temp > target)
-//                 {
-//                     r--;
-//                     if (num[r] == num[r + 1])
-//                         r--;
-//                 }
-//                 else
-//                 {
-//                     res.push_back({num[i], num[j], num[l], num[r]});
-//                     l++;
-//                     r--;
-//                     while (l < r && (num[l] == num[l - 1]))
-//                         l++;
-//                     while (l < r && (num[r] == num[r + 1]))
-//                         r--;
-//                 }
-//             }
-//         }
-//     }
-//     for (auto p : res)
-//     {
-//         for (auto pp : p)
-//         {
-//             cout << pp << ' ';
-//         }
-//         cout << endl;
-//     }
-//     cout << endl;
-//     return 0;
-// }
-
 // 重复的子字符串
 // int main()
 // {
@@ -204,8 +132,16 @@ using namespace std;
 //     int k;
 //     cin >> k;
 //     reverse(s.begin(), s.end());
-//     reverse(s.begin(), s.begin() + k); //reverse函数翻转区间是左闭右开的
+//     reverse(s.begin(), s.begin() + k); // reverse函数翻转区间是左闭右开的
 //     reverse(s.begin() + k, s.end());
 //     cout << s << endl;
 //     return 0;
+// }
+
+// 最长特殊序列|
+// 这个题有点脑筋急转弯，没想明白解题思路就写不出那一行精准代码
+// 我按正常思路解出来了，还新开了一个set，然后看了题解，直呼好家伙
+// int findLUSlength(string a, string b)
+// {
+//     return a != b ? max(a.size(), b.size()) : -1;
 // }
