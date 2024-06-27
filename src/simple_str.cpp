@@ -1,3 +1,4 @@
+// 一些简单字符串题
 #include <iostream>
 #include <vector>
 #include <algorithm>
@@ -144,4 +145,20 @@ using namespace std;
 // int findLUSlength(string a, string b)
 // {
 //     return a != b ? max(a.size(), b.size()) : -1;
+// }
+
+// 连续输入字符串，按长度为8拆分每个字符串并输出拆分后的字符串
+// int main()
+// {
+//     string str;
+//     while (getline(cin, str))
+//     {
+//         while (str.size() > 8)
+//         {
+//             cout << str.substr(0, 8) << " ";
+//             str = str.substr(8);
+//         }
+//         str.resize(8, '0');
+//         cout << str << endl;
+//     }
 // }

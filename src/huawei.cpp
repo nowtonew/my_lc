@@ -1,3 +1,4 @@
+// 华为部分机试题练习
 #include <iostream>
 #include <map>
 #include <set>
@@ -19,7 +20,6 @@ using namespace std;
 //     }
 //     return true;
 // }
-
 // int main()
 // {
 //     int num;
@@ -468,4 +468,44 @@ using namespace std;
 //     return 0;
 // }
 
-// 19.小华地图寻宝
+// OD技术一面手撕代码：对角线遍历数组
+// int main()
+// {
+//     vector<vector<int>> input = {{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}};
+//     int m = input.size();
+//     int n = input[0].size();
+//     cout << m << n << endl;
+//     vector<int> res;
+//     // int x = 0, y = 0;
+//     for (int i = 0; i <= m + n - 1; i++)
+//     {
+//         if (i % 2)
+//         { // 奇数向下
+//             int x = i < n ? 0 : i - n + 1;
+//             int y = i < n ? i : n - 1;
+//             while (x < m && y >= 0)
+//             {
+//                 res.push_back(input[x][y]);
+//                 x++;
+//                 y--;
+//             }
+//         }
+//         else
+//         { // 偶数向上
+//             int x = i < m ? i : m - 1;
+//             int y = i < m ? 0 : i - m + 1;
+//             while (x >= 0 && y < n)
+//             {
+//                 res.push_back(input[x][y]);
+//                 x--;
+//                 y++;
+//             }
+//         }
+//     }
+//     for (auto i : res)
+//     {
+//         cout << i << ",";
+//     }
+//     cout << endl;
+//     return 0;
+// }

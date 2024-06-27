@@ -1,3 +1,4 @@
+// 力扣hot-100题
 #include <iostream>
 #include <vector>
 #include <unordered_map>
@@ -1210,4 +1211,36 @@ using namespace std;
 //     }
 //     cout << endl;
 //     return 0;
+// }
+
+//-----------------------------------------------------------------------
+
+// 75.颜色分类（使用快排版本）
+// int partition(vector<int> &nums, int l, int r)
+// {
+//     int target = nums[r];
+//     int i = l - 1;
+//     for (int j = l; j < r; j++)
+//     {
+//         if (nums[j] < target)
+//         {
+//             i++;
+//             swap(nums[i], nums[j]);
+//         }
+//     }
+//     swap(nums[i + 1], nums[r]);
+//     return i + 1;
+// }
+// void quickSort(vector<int> &nums, int l, int r)
+// {
+//     if (l < r)
+//     {
+//         int t = partition(nums, l, r);
+//         quickSort(nums, l, t - 1);
+//         quickSort(nums, t + 1, r);
+//     }
+// }
+// void sortColors(vector<int> &nums)
+// {
+//     quickSort(nums, 0, nums.size() - 1);
 // }
